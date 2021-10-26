@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="formulario.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+    </style>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <title>Contactanos</title>
+</head>
+
+<body>
+    <div class="grid-principal">
+        <div class="header">
+            <div class="titulo-de-header"><i class="fas fa-cat"></i>¡Bienvenidos!<i class="fas fa-cat"></i></div>
+        </div>
+        <div class="navbar">
+            <a class="links" href="../index.html" style="text-decoration: none;">Inicio</a>
+            <a class="links" href="imagenes.html" style="text-decoration: none;">Imagenes</a>
+            <a class="links" href="formulario.html" style="text-decoration: none;">Contacto</a>
+        </div>
+        <div class="body">
+            <div class="contenedor">
+                <div id="texto-contenedor">
+                    <h2>Si quiere conocerlas más,<br> no dude en llenar el formulario</h2>
+                </div>
+                <div class="formulario">
+                    <form action="" method="" id="formulario">
+                        <div class="grid">
+                            <label for="nombre" class="titulo">Nombre:</label>
+                            <input type="text" name="nombre" id="nombre" class="campo" maxlength="15"
+                                pattern="[A-Za-z]{2,15}" title="Introduzca entre 2 y 12 letras"
+                                placeholder="Introduzca su nombre" required> <br>
+                            <label for="tel" class="titulo">Teléfono:</label>
+                            <input type="tel" name="tel" id="telefono" class="campo" pattern="[0-9]{8}"
+                                title="Introduzca 8 cifras" placeholder="Telefono" required> <br>
+                            <label for="dia" class="titulo">Fecha de nacimiento:</label>
+                            <span class="campo">
+                                <input type="number" name="dia" id="dia" size="2" min="1" max="31" required>
+                                <input type="number" name="mes" id="mes" size="2" min="1" max="12" required>
+                                <input type="number" name="año" id="año" size="4" min="1930" max="2003" required> <br>
+                            </span>
+                            <span class="titulo">Sexo:</span>
+                            <span class="campo">
+                                <label>
+                                    <input type="radio" value="0" name="radio" checked>
+                                    <span>F</span>
+                                </label>
+                                <label>
+                                    <input type="radio" value="1" name="radio">
+                                    <span>M</span>
+                                </label>
+                                <label>
+                                    <input type="radio" value="2" name="radio">
+                                    <span>X</span><br>
+                                </label>
+                            </span>
+                            <span></span>
+                            <div class="form-floating">
+                                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                                    style="height: 100px"></textarea>
+                                <label for="floatingTextarea2">Deje aqui sus comentarios</label>
+                            </div>
+                            <span class="campo">
+                                <input type="checkbox" id="mayor_de_edad" name="mayor" value="mayor">
+                                <label for="mayor"> Mayor de 18 años</label>
+                            </span>
+                            <span></span>
+                            <span>
+                                <p id="mensaje_error"></p>
+                                <input type="submit" name="send" id="enviar" value="Enviar">
+                                <input type="reset" name="clear" id="clear" value="Borrar">
+                            </span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <a href="https://github.com/martinivanvila" style="text-decoration: none;">Martin Vila 2021</a>
+        </div>
+        <script src="validacionformulario.js"></script>
+</body>
+
+</html>
